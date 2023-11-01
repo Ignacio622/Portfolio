@@ -1,0 +1,54 @@
+/*******************************************/
+/*              Style for receta.html      */
+
+
+
+
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/Altine-Regular.otf);
+}
+
+@font-face {
+    font-family:texto;
+    src: url(../fonts/Kalam-Light.ttf);
+}
+
+* {box-sizing: border-box;}         /*el width incluy el pading*/
+                                    /*el espacio en blanco lo coge de dentro del cuadro
+                                    lo haré siempre*/
+
+body {background-color: rgb(188, 183, 192);
+color: black;
+background-image: url(../img/fondo.jpg);
+background-size: 20%;}
+
+#wrapper {background-color: rgb(223, 180, 101);
+        width:80%;
+        margin:auto;
+        padding:10%;
+        border-radius:20px;}
+
+
+h1 {border:2px solid #342B09;
+    text-align: center;
+    padding:10px 0;
+    border-radius:10px 40px;
+    /* sombra de caja */
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);}
+
+
+blockquote {border-left: 3px solid chocolate;
+            font-style: italic;  /* Para poner en cursiva*/
+            font-weight: bold;   /* Para poner en negrita*/
+            padding:10px;            /* margin y padding pequeños pueden estar en pixeles */
+            background-color: rgb(158, 158, 158);}
+
+#Foto_hamburguesa {width: 80%;
+                    margin: auto;
+                    display: block;}
+
+
+dt {font-weight:bold;
+    color: #342309;
+    font-size:1.2em;}
