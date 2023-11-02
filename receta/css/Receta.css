@@ -1,6 +1,9 @@
-/*******************************************/
-/*              Style for receta.html      */
-
+/***************************************************/
+/*              Style for receta.html              */
+/*              author: Ignacio Lopez              */
+/*              version:1.0                        */
+/*              coment: Receta de hamburguesa      */
+/***************************************************/
 
 
 
@@ -34,6 +37,7 @@ h1 {border:2px solid #342B09;
     text-align: center;
     padding:10px 0;
     border-radius:10px 40px;
+    margin-top: 8%;
     /* sombra de caja */
     box-shadow: 5px 5px 5px rgb(88, 88, 88);}
 
