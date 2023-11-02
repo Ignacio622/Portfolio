@@ -37,7 +37,7 @@ h1 {border:2px solid #342B09;
     text-align: center;
     padding:10px 0;
     border-radius:10px 40px;
-    margin-top: 8%;
+    margin-top: 2%;
     /* sombra de caja */
     box-shadow: 5px 5px 5px rgb(88, 88, 88);}
 
@@ -56,3 +56,10 @@ blockquote {border-left: 3px solid chocolate;
 dt {font-weight:bold;
     color: #342309;
     font-size:1.2em;}
+
+
+/********************************** gestión de la responsividad****************************/
+
+@media only screen and (width<600px) {
+    #wrapper {width:95%;}
+}
