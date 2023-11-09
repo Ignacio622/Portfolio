@@ -1,0 +1,14 @@
+.nav-enlace{
+    display: inline-block;
+    background: rgb(176, 136, 230);
+    color: #ffffff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rgb(106, 81, 139);
+}
+nav{
+    background: rgb(179, 164, 235);
+    padding: 10px;
+}

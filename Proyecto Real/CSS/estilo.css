@@ -1,0 +1,163 @@
+/***************************************************/
+/*              Style for index.html               */
+/*              author: Ignacio Lopez              */
+/*              version:1.1                        */
+/*              coment: Proyecto                   */
+/***************************************************/
+
+/**************** fuentes ******************/
+@font-face {
+    font-family: texto;
+    src: url(../FONT/texto01.ttf);
+}
+
+@font-face {
+    font-family: runas;
+    src: url(../FONT/titulo.ttf);
+}
+
+@font-face {
+    font-family: intro;
+    src: url(../FONT/intro.ttf);
+}
+
+* {box-sizing: border-box;}
+/******************** estilo general *********************/
+
+body {background-image: url(../IMG/low-poly-grid-haikei02.png);
+    background-size: 30%;
+    color: white;
+    font-family: intro;
+    font-size: 2em;}
+
+
+#wrapper {width: 80%;
+    margin: auto;
+    background-color: rgb(215, 193, 243);}
+
+h1 {color: rgb(87, 39, 143);}
+
+blockquote {border:2px solid #342B09;
+    font-family: texto;
+    text-align: center;  /* Para centrar el texto*/
+    padding:10px 0;
+    border-radius:10px 40px;
+    background-color:   rgb(179, 164, 235);
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+}
+
+
+/******************** estilo de barra de navegación ********************/
+
+nav {font-family: runas;}
+
+
+.nav-enlace{
+    display: inline-block;
+    background: rgb(79, 118, 177);
+    color: #ffffff;
+    padding: 10px 35px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+    overflow: hidden;
+}
+.nav-enlace:hover{
+    background: rgb(106, 81, 139);
+}
+nav{
+    background: rgb(171, 151, 243);
+    padding: 10px;
+    float: left;                /*especificamos que el barra de navegacion esté alineado a la izquierda de la página.*/
+    font-size: 110%;
+}
+
+
+/************************************ hero section ****************************************/
+
+#hero {background-image: url(../IMG/hero\ section1.jpg);
+        height: 98vh;  /* forzar el alto de la hero para ver la foto */
+        background-size: cover;  /* estira la foto para verla encajar */
+        background-position: 5%;  /* donde está el punto de interes */
+        font-family: runas;
+        color: rgb(0, 0, 0);
+        font-size: 0,7em;
+        text-align: center;
+        padding-left: 20px;
+        padding-top: 20px;
+}
+
+
+
+/******************************** Gallery *****************************/
+
+#foto1 img {background-position: 60%;
+    width: 100%;
+    border-radius: 2%;
+    background-size: cover;
+    font-size: 1,4em;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+
+.foto2 {
+    width: 350px;
+    margin-right: 60px;
+    margin-top: -80px;
+}
+
+
+
+
+
+/******************************** Texto foto2 *****************************/
+
+.quienSoy {
+    margin-right: 30px;
+    margin-top: 100px;
+}
+
+.contenedor {
+    justify-content: right;
+    display: flex;
+    margin-right: 60px;
+    margin-top: 90px;
+}
+
+.quienSoyTexto {
+    background-color: rgb(179, 164, 235);
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+    border-left:2px solid #342B09;
+    padding-left: 8px;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+/******************************** responsividad ***************************************/
+
+@media only screen and (width<1000px){
+    #wrapper {width: 95%;}
+    nav{display: block;}
+
+    .foto2 {
+        width: auto;
+        margin-right: 5px;
+        margin-top: -10px;
+    }
+
+    .quienSoy {
+        margin-right: 3px;
+        margin-top: 3px;
+    }
+    
+    .contenedor {
+        margin-right: 60px;
+        margin-top: 90px;
+    }
+    
+    .quienSoyTexto {
+        background-color: rgb(179, 164, 235);
+    }
+}
