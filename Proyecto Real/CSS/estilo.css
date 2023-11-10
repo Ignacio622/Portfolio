@@ -33,7 +33,7 @@ body {background-image: url(../IMG/low-poly-grid-haikei02.png);
 
 #wrapper {width: 80%;
     margin: auto;
-    background-color: rgb(215, 193, 243);}
+    background-color: rgb(189, 154, 235);}
 
 h1 {color: rgb(87, 39, 143);}
 
@@ -42,10 +42,18 @@ blockquote {border:2px solid #342B09;
     text-align: center;  /* Para centrar el texto*/
     padding:10px 0;
     border-radius:10px 40px;
-    background-color:   rgb(179, 164, 235);
+    background-color:   rgb(158, 138, 233);
     box-shadow: 5px 5px 5px rgb(88, 88, 88);
 }
 
+
+.titulo {font-family: runas;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.8em;}
+
+
+#imagenYtexto {padding: 4%;}
 
 /******************** estilo de barra de navegación ********************/
 
@@ -102,38 +110,26 @@ nav{
 
 
 
-.foto2 {
-    width: 350px;
-    margin-right: 60px;
-    margin-top: -80px;
-}
-
-
-
-
 
 /******************************** Texto foto2 *****************************/
 
-.quienSoy {
-    margin-right: 30px;
-    margin-top: 100px;
+
+#imagenYtexto {padding: 5%;
+    border-bottom: 2px solid rgb(190, 94, 30);}
+
+#foto2 {width:45%;                /****Para que la foto no se salga, indica ancho siempre****/
+    float: left;                /****Foto pegada a la izquierda****/
+    margin: 40px 20px 10px 0;    /****Que corra aire alrededor de la foto****/
+    }
+
+#imagenYtexto p ::first-letter{
+font-size: 1.6em;
+color: rgb(190, 94, 30);
 }
 
-.contenedor {
-    justify-content: right;
-    display: flex;
-    margin-right: 60px;
-    margin-top: 90px;
-}
+#imagenYtexto p {text-align: justify;}
 
-.quienSoyTexto {
-    background-color: rgb(179, 164, 235);
-    box-shadow: 5px 5px 5px rgb(88, 88, 88);
-    border-left:2px solid #342B09;
-    padding-left: 8px;
-    padding-right: 5px;
-    padding-top: 3px;
-}
+
 
 /******************************** responsividad ***************************************/
 
