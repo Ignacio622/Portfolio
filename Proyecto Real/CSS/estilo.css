@@ -82,7 +82,7 @@ nav{
 
 /************************************ hero section ****************************************/
 
-#hero {background-image: url(../IMG/hero\ section1.jpg);
+#hero {background-image: url(../IMG/hero_section1.jpg);
         height: 98vh;  /* forzar el alto de la hero para ver la foto */
         background-size: cover;  /* estira la foto para verla encajar */
         background-position: 5%;  /* donde está el punto de interes */
