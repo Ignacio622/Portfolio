@@ -70,9 +70,10 @@ nav {font-family: runas;}
     overflow: hidden;
 }
 .nav-enlace:hover{
-    background: rgb(106, 81, 139);
+    background: rgb(99, 69, 138);
 }
 nav{
+    position: fixed;
     background: rgb(171, 151, 243);
     padding: 10px;
     float: left;                /*especificamos que el barra de navegacion esté alineado a la izquierda de la página.*/
