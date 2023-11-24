@@ -44,8 +44,10 @@ body {background-color: black;
 .topnav {
     background-color: #333;
     overflow: hidden;
+    opacity: 0.6;
 }
 
+.topnav:hover {opacity: 1;}
   /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -120,6 +122,14 @@ nav {font-family: runas;
 .col-2  {padding: 5%}
 #ejemplo-grid-2 img {width: 100%;}
 
+#ejemplo-grid-2 button {background-color: black;
+    border: 2px solid rgb(210, 105, 30);
+    color: rgb(210, 105, 30);
+    padding: 9px;
+}
+
+#ejemplo-grid-2 button:hover {background-color: rgb(210, 105, 30); /* :hover es que se activa cuando el raton se pasa por encima */
+color: black;}
 
 
 /****************************** Section Gallery **********************************/
@@ -134,24 +144,35 @@ nav {font-family: runas;
 }
 
 #gallery img {width: 100%;
+    opacity: 0.7;
 }
+
+#gallery img:hover {opacity: 1;}
 
 .col-4 {padding: 4%;
-    border: 1px solid chocolate;
+    border: 1px solid rgb(210, 105, 30);
 }
 
+#gallery h3 {font-family: runas;
+    text-align: center;
+    font-size: 1em;}
 
 /****************************** Section Gallery **********************************/
 
 
 /******************************** responsividad ***************************************/
+@media only screen and (width<900px){ /**** Para tablet ****/
+    .grid-4 {grid-template-columns: 50% 50%;}
+}
 
 @media only screen and (width<650px){
     #wrapper {width: 95%;}
     #hero {background-image: url(../IMG/norse-mithology-bg.jpg);}
     #drakkar {width: 100%}
     .grid-2 {grid-template-columns: 100%;}
+    .grid-4 {grid-template-columns: 100%;}
 }
+
 
 
 @media screen and (max-width: 700px) {
