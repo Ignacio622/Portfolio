@@ -5,4 +5,8 @@ function myFunction() {
     } else {
     x.className = "topnav";
     }
-} 
+}
+
+
+/************************ js del accordion **********************/
+

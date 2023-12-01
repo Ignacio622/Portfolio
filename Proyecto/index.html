@@ -8,16 +8,34 @@
     <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
+    <script>var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+        
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        } </script>
 
 </head>
 <body>
     <div id="wrapper">
         <nav>
             <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#hero" class="active">Home</a>
+            <a href="#intro">Intro</a>
+            <a href="#mitos">Mitos</a>
+            <a href="#fotos">Gallery</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -42,30 +60,167 @@
 
 
 <!-- Sección de ejemplo de grid a 2 columnas : 1 contenedor grid-2 y 2 columnas dentro col-2-->
-<section id="ejemplo-grid-2">
+    <section id="ejemplo-grid-2">
     <div class="titulo">GRID DE 2...</div>
-    <div class="grid-2">
-        <div class="col-2">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus possimus maxime, magnam officiis, reprehenderit quaerat quod enim veritatis sint consequuntur aliquid optio eos, est dolor nemo maiores quas nesciunt aperiam?</p>
-            <button>Read more</button>
-        </div>
-        <div class="col-2">
-            <img src="https://fastly.picsum.photos/id/88/400/300.jpg?hmac=7-Rw6008BU5pfzqU2FI6nE_QQft1_i3r9AyQAFatk7w" alt="imagen ultra random">
-        </div>
-        <div class="col-2">
-                <img src="https://fastly.picsum.photos/id/88/400/300.jpg?hmac=7-Rw6008BU5pfzqU2FI6nE_QQft1_i3r9AyQAFatk7w" alt="imagen ultra random">
-        </div>
-
-        <div class="col-2">
+        <div class="grid-2">
+            <div class="col-2">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus possimus maxime, magnam officiis, reprehenderit quaerat quod enim veritatis sint consequuntur aliquid optio eos, est dolor nemo maiores quas nesciunt aperiam?</p>
                 <button>Read more</button>
-        </div>
-        
-    </div>
+            </div>
+            <div class="col-2">
+                <img src="https://fastly.picsum.photos/id/88/400/300.jpg?hmac=7-Rw6008BU5pfzqU2FI6nE_QQft1_i3r9AyQAFatk7w" alt="imagen ultra random">
+            </div>
+            <div class="col-2">
+                    <img src="https://fastly.picsum.photos/id/88/400/300.jpg?hmac=7-Rw6008BU5pfzqU2FI6nE_QQft1_i3r9AyQAFatk7w" alt="imagen ultra random">
+            </div>
 
+            <div class="col-2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus possimus maxime, magnam officiis, reprehenderit quaerat quod enim veritatis sint consequuntur aliquid optio eos, est dolor nemo maiores quas nesciunt aperiam?</p>
+                    <button>Read more</button>
+            </div>
+        
+        </div>
+    </section>
+
+    <!--Uso de accordion para presentar mucha información en formato desplegable: preguntas y respuestas estructurado en varios capitulos, etc-->
+
+    <section id="mitos">
+        <div class="container">
+        <div class="accordion">
+            <div class="accordion-item" id="question1">
+            <a class="accordion-link" href="#question1">
+                <div class="flex">
+                <h3>THOR</h3>
+                <!--<ul>
+                    <li>#Figma</li>
+                    <li>#Sketch</li>
+                    <li>#Adobe</li>
+                    <li>#Invision</li>
+                    <li>#Protopie</li>
+                </ul>-->
+                </div>
+                <i class="icon ion-md-arrow-forward"></i>
+                <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit illum accusamus corrupti. Dolorum possimus debitis ipsa earum iste ab. Inventore culpa quia laudantium, autem tenetur consequuntur? Nam, ex saepe.</p>
+            </div>
+            <hr>
+        </div>
+            <div class="accordion-item" id="question2">
+            <a class="accordion-link" href="#question2">
+                <div class="flex">
+                <h3>UX/UI DESIGN</h3>
+                <ul>
+                    <li>#Figma</li>
+                    <li>#Sketch</li>
+                    <li>#Adobe</li>
+                    <li>#Invision</li>
+                    <li>#Protopie</li>
+                </ul>
+                </div>
+                <i class="icon ion-md-arrow-forward"></i>
+                <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+            <hr>
+        </div>
+            <div class="accordion-item" id="question3">
+            <a class="accordion-link" href="#question3">
+                <div class="flex">
+                <h3>FRONTEND DEVELOPMENT</h3>
+                <ul>
+                    <li>#Figma</li>
+                    <li>#Sketch</li>
+                    <li>#Adobe</li>
+                    <li>#Invision</li>
+                    <li>#Protopie</li>
+                </ul>
+                </div>
+                <i class="icon ion-md-arrow-forward"></i>
+                <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+            <hr>
+        </div>
+            <div class="accordion-item" id="question4">
+            <a class="accordion-link" href="#question4">
+                <div>
+                <h3>BACKEND DEVELOPMENT</h3>
+                <ul>
+                    <li>#Figma</li>
+                    <li>#Sketch</li>
+                    <li>#Adobe</li>
+                    <li>#Invision</li>
+                    <li>#Protopie</li>
+                </ul>
+                </div>
+                <i class="icon ion-md-arrow-forward"></i>
+                <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+            <hr>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+<!--********************Gallery*********************/ -->
+
+    <!-- Section fotos -->
+
+<div class="titulo">FOTOS</div>
+<section id="fotos">
+    <div class="grid-4">
+        <div class="col-4">
+            <div class="container2">
+                <img src="https://fastly.picsum.photos/id/816/400/300.jpg?hmac=G6Y-45zeI1uemwiWnBSWOhkHWfEUaOFgwxT1rMvm7rM" alt="Avatar" class="image">
+                <div class="overlay">Esta foto tal y cual</div>
+            </div> 
+        
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/88/400/300.jpg?hmac=7-Rw6008BU5pfzqU2FI6nE_QQft1_i3r9AyQAFatk7w">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/932/400/300.jpg?hmac=Y2iK0peJiiAPUS-NL0SsL_kiFVpVY1VPFEHNP0jc64E">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/874/400/300.jpg?hmac=9D0Mj4lnVxHfWx6L5Ikk8nEMCOhgJ1w9TGGuGMWTB8I">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/500/400/300.jpg?hmac=jRmghJCJ1JFpp7IZIYbpH2i8kUXg6mOF-YBorNLNqOA">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/947/400/300.jpg?hmac=tDlfkkGQoEAajdJJmqmKYL9pq8stSIN_hLWTOpLev_0">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/795/400/300.jpg?hmac=K4FRonONp7NOl4UwV7SLy3WQKh8kZlQB55IcVFwoIdU">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/208/400/300.jpg?hmac=msqO4qe3dr8DmNQkWj7pECTisBGxNmfCeb-0tRiFU88">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/357/400/300.jpg?hmac=tjFbUj78r05c3im8QmRC4qKiKI86BBgN0aUjHlOcthU">
+        </div>
+        <div class="col-4">
+            <img src="https://fastly.picsum.photos/id/323/400/300.jpg?hmac=2EbkxdMp9KT6S3wGeqfaU_VnIMkzCzZFULpOD6M_0Po">
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
 </section>
 
-<!-- esta section tiene un grid de 4 columnas -->
+
+
+        <!-- esta section tiene un grid de 4 columnas -->
         <section id="gallery">
             <div class="titulo">GALLERY</div>
 
@@ -92,6 +247,7 @@
             </div>
         </section>
 
+        
         <footer> autor: Ignacio Lopez </footer>
     </div>
 </body>
