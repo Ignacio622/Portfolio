@@ -25,7 +25,7 @@
 /******************** estilo general *********************/
 
 body {background-image: url(../IMG/low-poly-grid-haikei02.png);
-    background-size: 30%;
+    background-size: 40%;
     color: white;
     font-family: intro;
     font-size: 2em;}
@@ -33,7 +33,7 @@ body {background-image: url(../IMG/low-poly-grid-haikei02.png);
 
     #wrapper {width: 80%;
         margin: auto;
-        background-color: rgb(189, 154, 235);}
+        background-color: rgb(145, 118, 180);}
     
 h1 {color: rgb(87, 39, 143);}
 
@@ -42,7 +42,7 @@ blockquote {border:2px solid #342B09;
     text-align: center;  /* Para centrar el texto*/
     padding:10px 0;
     border-radius:10px 40px;
-    background-color:   rgb(158, 138, 233);
+    background-color:   rgb(107, 89, 172);
     box-shadow: 5px 5px 5px rgb(88, 88, 88);
 }
 
@@ -54,6 +54,12 @@ blockquote {border:2px solid #342B09;
 
 
 #imagenYtexto {padding: 4%;}
+
+
+#intro {padding: 4%;}
+
+
+#footer {padding: 3%;}
 
 /******************** estilo de barra de navegación ********************/
 
@@ -101,7 +107,8 @@ blockquote {border:2px solid #342B09;
 nav {font-family: runas;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;}
+    top: 0;
+    z-index: 99; /* Para que no se esconde debajo de otras capas*/}
 
 /************************************ hero section ****************************************/
 
@@ -121,18 +128,110 @@ nav {font-family: runas;
 
 /******************************** Gallery *****************************/
 
-#foto1 img {background-position: 60%;
-    width: 100%;
-    border-radius: 2%;
-    background-size: cover;
-    font-size: 1,4em;
-    text-align: center;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 20px;
+
+#fotos img {width: 100%;}
+
+#fotos h3 {font-size: 0,8;
+        text-align: center;
+        font-weight: lighter;}
+
+
+#gallery {
+    padding: 5% 0;
 }
 
 
+.grid-4 {display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#gallery img {width: 100%;
+    opacity: 0.7;
+}
+
+#gallery img:hover {opacity: 1;}
+
+.col-4 {padding: 4%;
+    border: 1px solid rgb(210, 105, 30);
+}
+
+#gallery h3 {font-family: runas;
+    text-align: center;
+    font-size: 1em;}
+
+
+
+/**** Galeria Nueva ****/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+
+/****************************** Section Gallery2.0 **********************************/
+/* Container needed to position the overlay. Adjust the width as needed */
+.container2 {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+  /* Make the image to responsive */
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+  /* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 0.8em;
+    padding: 20px;
+    text-align: center;
+}
+
+  /* When you mouse over the container, fade in the overlay title */
+.container2:hover .overlay {
+    opacity: 1;
+}
 
 
 /******************************** Texto foto2 *****************************/
