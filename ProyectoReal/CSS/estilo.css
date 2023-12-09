@@ -40,7 +40,7 @@ h1 {color: rgb(87, 39, 143);}
 blockquote {border:2px solid #342B09;
     font-family: texto;
     text-align: center;  /* Para centrar el texto*/
-    padding:10px 0;
+    padding:3%;
     border-radius:10px 40px;
     background-color:   rgb(107, 89, 172);
     box-shadow: 5px 5px 5px rgb(88, 88, 88);
