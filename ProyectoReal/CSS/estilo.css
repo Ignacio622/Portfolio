@@ -50,7 +50,8 @@ blockquote {border:2px solid #342B09;
 .titulo {font-family: runas;
     text-align: center;
     padding-top: 10px;
-    font-size: 1.8em;}
+    font-size: 1.8em;
+    margin-top: 5%;}
 
 
 #imagenYtexto {padding: 4%;}
@@ -304,13 +305,13 @@ nav {font-family: runas;
 .container2 {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
 }
 
   /* Make the image to responsive */
 .image {
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
     opacity: 0.8;
 }
@@ -453,12 +454,13 @@ font-size: 1.6em;
 color: rgb(190, 94, 30);
 }
 
-#imagenYtexto p {text-align: justify;}
+#imagenYtexto p {text-align: justify;
+}
 
-
-
-
-
+.Textorespuesta {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 
 /******************************** Grid de 2 columnas *******************************/
@@ -596,10 +598,109 @@ button:hover .icon-3 {
 
 /****************************** Footer ************************************/
 
-#footer {
-    background-color: #717171;
-    margin-top: 4%;
+
+
+.footer-grande {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    width: 45%;
+  }
+
+  .footer-right {
+    width: auto;
+  }
+  
+  .footer-left h2, .footer-right h2 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+.iconos img {width: 130px;
+margin-left: 10%;
 }
+
+
+
+
+/****************************** Footer para pantallas pequeñas ************************************/
+
+
+.footer-pequeño {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .contact-info,
+  .social-media {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h2,
+  .social-media h2 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+
+
 
 
 
@@ -745,3 +846,22 @@ button:hover .icon-3 {
     .grid-2 {display:grid; /*El contenedor va a ser dividido en columnas*/
         grid-template-columns: 90%;}
     }
+
+
+
+
+
+      /********************** FOOTER ***************************/
+
+@media (max-width: 900px) {
+    .footer-grande {
+    display: none;
+    }
+}
+
+
+@media only screen and (width>900px) {
+    .footer-pequeño {
+    display: none;
+    }
+}
